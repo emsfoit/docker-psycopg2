@@ -5,4 +5,4 @@ RUN apk update --no-cache \
   && pip install --no-cache-dir --upgrade pip \
   && pip install --no-cache-dir -r /requirements.txt \
   && apk del .build-deps
-RUN apk add postgresql-libs libpq --no-cache
+RUN apk add postgresql-libs  --no-cache
